@@ -5,16 +5,17 @@ WHEN I am prompted for information about my application repository;
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 ```
 //questions needed to be asked: 
-Title of my project
-sections entitled 
-Description*
+Title of my project-
+
+sections entitled:
+Description*-
 Table of Contents
-Istallation (instructions)*
-Usage (Info)*
-License = list of options
-Contributing (guidelines)* 
-Tests (instructions)*
-Questions
+Istallation (instructions)*-
+Usage (Info)*-
+License = list of options-
+Contributing (guidelines)* -
+Tests (instructions)*-
+Questions-
 
 WHEN I enter my project title
 THEN this is displayed as the title of the README
@@ -29,7 +30,7 @@ THEN this information is added to the sections of the README entitled Descriptio
 Description*
 Istallation (instructions)*
 Usage (Info)*
-Contributing (guidelines)* 
+Contributing (guidelines)* -
 Tests (instructions)*
 
 

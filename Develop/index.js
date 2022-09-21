@@ -5,32 +5,59 @@ inquirer
     .prompt([
         {
             type: 'input',
-            message: 'What is your name?',
-            name: 'name',
+            name: 'title',
+            message: 'What is the title of your project?',
+            default: 'my project',
+
+        },
+        {
+            type: 'editor',
+            name: 'description',
+            message: 'Give a description of your project.',
+
+        },
+        {
+            type: 'list',
+            name: 'Table of Contents',
+            message: 'Table of Contents',
+            choices: ['Installation', 'Usage', 'License', 'Contribution', 'Test Project', 'Questions',]
+
+        },
+        {
+            type: 'editor',
+            name: 'installation',
+            message: 'How is the installation process?',
 
         },
         {
             type: 'input',
-            message: 'Where are you located?',
-            name: 'location',
+            name: 'usage',
+            message: 'What is the project for?',
+
+        },
+        {
+            type: 'list',
+            name: 'licenses',
+            message: 'What license do you use?',
+            choices: ['Unlicense', 'MIT ', 'Attribution License (BY)', 'Open Database License (ODbl)', 'Mozilla']
 
         },
         {
             type: 'input',
-            message: 'How do you describe yourself?',
-            name: 'bio',
+            name: 'contribution',
+            message: 'What are your contributing guidelines?',
 
         },
         {
-            type: 'input',
-            message: 'What is your LinkedIn?',
-            name: 'LinkedIn',
+            type: 'editor',
+            name: 'test',
+            message: 'How can the user test your project?',
 
         },
         {
-            type: 'input',
-            message: 'What is your Github username?',
-            name: 'GitHub',
+            type: 'editor',
+            name: 'question',
+            message: 'What question do you have, for community feedback.',
 
         },
     ])

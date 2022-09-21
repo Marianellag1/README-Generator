@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const fs = require('fs');
 // TODO: Create an array of questions for user input
 inquirer
     .prompt([
@@ -7,66 +8,98 @@ inquirer
             type: 'input',
             name: 'title',
             message: 'What is the title of your project?',
-            default: 'my project',
+            default: 'my first project',
 
         },
         {
-            type: 'editor',
+            type: 'input',
             name: 'description',
             message: 'Give a description of your project.',
 
-        },
-        {
-            type: 'list',
-            name: 'Table of Contents',
-            message: 'Table of Contents',
-            choices: ['Installation', 'Usage', 'License', 'Contribution', 'Test Project', 'Questions',]
+        },//Does the table of contents go here?
+        // {
+        //     type: 'list',
+        //     name: 'Table of Contents',
+        //     message: 'Table of Contents',
+        //     choices: ['Installation', 'Usage', 'License', 'Contribution', 'Test Project', 'Questions',]
 
-        },
+        // },
         {
-            type: 'editor',
+            type: 'input',
             name: 'installation',
-            message: 'How is the installation process?',
+            message: 'How do you install the app.?',
 
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'What is the project for?',
+            message: 'How do you use the app.?',
 
         },
         {
             type: 'list',
-            name: 'licenses',
-            message: 'What license do you use?',
+            name: 'license',
+            message: 'What license did you use?',
             choices: ['Unlicense', 'MIT ', 'Attribution License (BY)', 'Open Database License (ODbl)', 'Mozilla']
 
         },
         {
             type: 'input',
             name: 'contribution',
-            message: 'What are your contributing guidelines?',
+            message: 'What are the contributing guidelines?',
 
         },
         {
-            type: 'editor',
+            type: 'input',
             name: 'test',
             message: 'How can the user test your project?',
 
         },
         {
-            type: 'editor',
+            type: 'input',
             name: 'question',
             message: 'What question do you have, for community feedback.',
 
         },
     ])
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+    // TODO: Create a function to write README file
+    .then(({ title, description, installation, usage, license, contribution, test, question }) => {
+        const tableOfContents = `# Professional README
+    ## ${title}
+    ### ${description}
+
+    ## Table of Contents
+
+    -[Installation Instructions](#installation-instructions)
+    -[Usage Info](#usage-info)
+    -[License](#license)
+    -[Contributing Guidelines](#contributing-guidelines)
+    -[Testing Instructions](#testing-instructions)
+    -[Questions](#questions)
+
+    ## Installation Instructions
+    ${installation}
+    ## Usage Info
+    ${usage}
+    ### License
+    ${license}
+    ## Contributing Guidelines
+    ${contribution}
+    ### Testing Instructions
+    ${test}
+    ### Questions
+    ${question}
+    
+    `
+    }
+        fs.writeFile('README.md', JSON.stringify(response, null, 2), (err) =>
+        err ? console.log(err) : console.log("Sucess!")
+    )
+    );
 
 // TODO: Create a function to initialize app
-function init() { }
+// function init() { }
 
 // Function call to initialize app
-init();
+// init();

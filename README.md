@@ -7,4 +7,8 @@ They are prompted with a series of questions in which determine the best README 
 User at the end of the list of questions being asked, can also enter in their github account name and email, which would be a link to enter those sites.
     When the user is satisfied with whatever input they inserted, they would then go into the README to see the final outcome of the answers they made and choices they picked. 
 User will be able to click on the table of contents list and directly send them to that specific item within the README file.
+<<<<<<< HEAD
 
+=======
+![github com_Marianellag1_README-Generator_blob_main_Develop_README md](https://user-images.githubusercontent.com/110939445/191661900-6ec830c9-788e-470b-b1e9-75418f476a15.png)
+>>>>>>> fadca72474e9897bf7328e1c299b7abac5c866d0

@@ -1,8 +1,8 @@
 
-        # **hello**
+        # **The README Generator**
         
         ### **License Application is Covered Under:**
-            MIT 
+            Unlicense
         ------------------------------------------------------------
         
         # **Table of Contents**
@@ -17,20 +17,20 @@
         
         ------------------------------------------------------------
         ## **Description of the Project**
-             how are you
+             This project is to help make a proffessional README file
 
         ## **Installation**
-            yes
+            The app will be installed from github
 
         ## **Usage Information**
-            ok
+            The app is easy to use, just install, open vs and start typing!
 
 
         ## **Contribution Guidelines**
-            workiing
+            If you want to contribute, please make a file, and submit for review
 
         ## **Test Insctructions**
-             adfds
+             user can take a copy of the code and try it in their vs
 
         ## **Questions?**
         ### You can reach me on:

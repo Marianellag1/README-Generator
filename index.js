@@ -62,7 +62,7 @@ inquirer
         },
     ])
     .then(({title, description, installation, usage, license, contribution, test, github,email})=>
-    fs.writeFile('README.md', genReadMe(title, description, installation, usage, license, contribution, test, github, email), (err) =>
+    fs.writeFile('./build/README.md', genReadMe(title, description, installation, usage, license, contribution, test, github, email), (err) =>
     (err) ? console.log(err) : console.log('sucess!')
     )
     );

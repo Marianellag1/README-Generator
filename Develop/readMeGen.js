@@ -1,7 +1,9 @@
-
+const genReadMe = function (title, description, installation, usage, license, contribution, test, question) {
+    return `
     # Professional README
-        my first project
-        this project will allow user to make a readme
+    
+        ${title}
+        ${description}
  
         -[Installation Instructions](#installation-instructions)
         -[Usage Information](#usage-information)
@@ -11,19 +13,22 @@
         -[Question](#question)
  
         ## Installation
-        the app can be installed thru github
+        ${installation}
 
         ## Usage Information
-        enter info and youll get a readme
+        ${usage}
 
         ### License
-        MIT 
+        ${license}
 
         ## Contribution Guidelines
-        as long as original is untouched can make copies
+        ${contribution}
 
         ## Test Insctructions
-        the user can make a copy and test the project 
-        
+        ${test}
+
         ## Questions
-        not really
+        ${question}`
+}
+
+module.exports = genReadMe;

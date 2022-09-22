@@ -50,13 +50,19 @@ inquirer
         },
         {
             type: 'input',
-            name: 'question',
-            message: 'What question do you have, for community feedback.',
+            name: 'github',
+            message: 'What is your Github username?',
+            
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your E-mail?',
             
         },
     ])
-    .then(({title, description, installation, usage, license, contribution, test, question})=>
-    fs.writeFile('README.md', genReadMe(title, description, installation, usage, license, contribution, test, question), (err) =>
+    .then(({title, description, installation, usage, license, contribution, test, github,email})=>
+    fs.writeFile('README.md', genReadMe(title, description, installation, usage, license, contribution, test, github, email), (err) =>
     (err) ? console.log(err) : console.log('sucess!')
     )
     );

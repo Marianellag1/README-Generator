@@ -1,34 +1,43 @@
-const genReadMe = function (title, description, installation, usage, license, contribution, test, question) {
+const genReadMe = function (title, description, installation, usage, license, contribution, test, github, email) {
     return `
-    # Professional README
-    
-        ${title}
-        ${description}
- 
+        # **${title}**
+        
+        ### **License Application is Covered Under:**
+            ${license}
+        ------------------------------------------------------------
+        
+        # **Table of Contents**
+        
         -[Installation Instructions](#installation-instructions)
+        #<a name="installation"></a> Installation
         -[Usage Information](#usage-information)
         -[License](#license)
         -[Contributing Guidelines](#contributing-guidelines)
         -[Test Instructions](#test-instructions)
         -[Question](#question)
- 
-        ## Installation
-        ${installation}
+        
+        ------------------------------------------------------------
+        ## **Description of the Project**
+             ${description}
 
-        ## Usage Information
-        ${usage}
+        ## **Installation**
+            ${installation}
 
-        ### License
-        ${license}
+        ## **Usage Information**
+            ${usage}
 
-        ## Contribution Guidelines
-        ${contribution}
 
-        ## Test Insctructions
-        ${test}
+        ## **Contribution Guidelines**
+            ${contribution}
 
-        ## Questions
-        ${question}`
+        ## **Test Insctructions**
+             ${test}
+
+        ## **Questions?**
+        ### You can reach me on:
+            Github:<https://www.github.com/${github}>
+            E-mail:<${email}>
+        `
 }
 
 module.exports = genReadMe;

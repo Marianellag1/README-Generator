@@ -2,19 +2,18 @@ const genReadMe = function (title, description, installation, usage, license, co
     return `
 # **${title}**
 
-### **License Application is Covered Under:**
+### **License**
     ${license}
 ------------------------------------------------------------
 
 # **Table of Contents**
 
--[Installation Instructions](#installation-instructions)
-#<a name="installation"></a> Installation
+-[Installation Instructions](#installation)
 -[Usage Information](#usage-information)
 -[License](#license)
--[Contributing Guidelines](#contributing-guidelines)
+-[Contributing Guidelines](#contribution-guidelines)
 -[Test Instructions](#test-instructions)
--[Question](#question)
+-[Question](#questions)
 
 ------------------------------------------------------------
 ## **Description of the Project**
@@ -30,10 +29,10 @@ const genReadMe = function (title, description, installation, usage, license, co
 ## **Contribution Guidelines**
     ${contribution}
 
-## **Test Insctructions**
+## **Test Instructions**
         ${test}
 
-## **Questions?**
+## **Questions**
 ### You can reach me on:
     Github:<https://www.github.com/${github}>
     E-mail:<${email}>

@@ -8,7 +8,6 @@ inquirer
             type: 'input',
             name: 'title',
             message: 'What is the title of your project?',
-            default: 'my first project',
 
         },
         {
@@ -64,39 +63,16 @@ inquirer
     ])
 
     // TODO: Create a function to write README file
-    .then(({ title, description, installation, usage, license, contribution, test, question }) => {
-        const tableOfContents = `# Professional README
-    ## ${title}
-    ### ${description}
-
-    ## Table of Contents
-
-    -[Installation Instructions](#installation-instructions)
-    -[Usage Info](#usage-info)
-    -[License](#license)
-    -[Contributing Guidelines](#contributing-guidelines)
-    -[Testing Instructions](#testing-instructions)
-    -[Questions](#questions)
-
-    ## Installation Instructions
-    ${installation}
-    ## Usage Info
-    ${usage}
-    ### License
-    ${license}
-    ## Contributing Guidelines
-    ${contribution}
-    ### Testing Instructions
-    ${test}
-    ### Questions
-    ${question}
-    
-    `
-    }
-        fs.writeFile('README.md', JSON.stringify(response, null, 2), (err) =>
-        err ? console.log(err) : console.log("Sucess!")
-    )
+    .then(({title, description, installation, usage, license, contribution, test, question }) =>
+        fs.writeFile('README.md', JSON.stringify( title,description, installation, usage, license, contribution, test, question), (err) =>
+            err ? console.log(err) : console.log("Sucess!")
+        )
     );
+
+//fs.writeFile(`./${fileName.toLowerCase().split(" ").join("")}.md, data), (err) =>
+//err ? console.log(err) : console.log("Sucess!")
+//)
+
 
 // TODO: Create a function to initialize app
 // function init() { }

@@ -1,1 +1,0 @@
-const genReadMe = function

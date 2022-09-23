@@ -1,8 +1,7 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const genReadMe = require('./readMeGen');
-// TODO: Create an array of questions for user input
+
 inquirer
 .prompt([
         {
@@ -33,19 +32,21 @@ inquirer
             type: 'list',
             name: 'license',
             message: 'What license did you use?',
-            choices: ['Unlicense', 'MIT ', 'Attribution License (BY)', 'Open Database License (ODbl)', 'Mozilla']
+            choices: ['Unlicense', 'MIT','ODbl', 'MPL 2.0']
             
         },
         {
             type: 'input',
             name: 'contribution',
-            message: 'What are the contributing guidelines?',
+            message: 'What are the contribution guidelines?',
+            default: 'Anyone can contribute to the project, as long as the it is agreed upon by the author, in order to merge any confirmed changes.'
             
         },
         {
             type: 'input',
             name: 'test',
             message: 'How can the user test your project?',
+            default: 'User can clone copy of project and test project. If user believes that the project lacks something and would like to contribute, please see contribution guidelines.'
             
         },
         {
@@ -61,17 +62,10 @@ inquirer
             
         },
     ])
-    .then(({title, description, installation, usage, license, contribution, test, github,email})=>
-    fs.writeFile('./build/README.md', genReadMe(title, description, installation, usage, license, contribution, test, github, email), (err) =>
-    (err) ? console.log(err) : console.log('sucess!')
-    )
-    );
-    
-        // TODO: Create a function to write README file
-        
-        // TODO: Create a function to initialize app
-        // function init() {}
-        
-        // Function call to initialize app
-        // init();
+    .then(({title, description, installation, usage, license, contribution, test, github,email})=> {
+        fs.writeFile('./build/README.md', genReadMe(title, description, installation, usage, license, contribution, test, github, email), (err) =>
+        (err) ? console.log(err) : console.log('sucess!')
+        )
+    },
+        );
     

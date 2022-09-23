@@ -1,9 +1,11 @@
 
-# **fjkdafjladj**
 
-### **License**
-    Unlicense
-------------------------------------------------------------
+# **lkdflksfd**
+
+[![Licence](http://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
 
 # **Table of Contents**
 
@@ -14,24 +16,42 @@
 -[Test Instructions](#test-instructions)
 -[Question](#questions)
 
-------------------------------------------------------------
+
+---
+
 ## **Description of the Project**
-        adfhjkdalfjdkf
+dfadfjhsdjkfsh
+
+
 
 ## **Installation**
-    daghkj
+addfdjfdjk
+
+
 
 ## **Usage Information**
-    aghfdkja
+asdjfhldjfds
+
 
 
 ## **Contribution Guidelines**
-    jkaldf'ldfkdj
+Anyone can contribute to the project, as long as the it is agreed upon by the author, in order to merge any confirmed changes.
+
+
 
 ## **Test Instructions**
-        jkadlfjldka
+User can clone copy of project and test project. If user believes that the project lacks something and would like to contribute, please see contribution guidelines.
+
+
 
 ## **Questions**
-### You can reach me on:
-    Github:<https://www.github.com/gjkldfajgdg>
-    E-mail:<jvfgklafkljfjklg@jfgdkljaglkjdflg.com>
+### If you have any questions about the project, please contact me at: sdfd. 
+### You can also see my projects and works at: https://github.com/asdf
+
+
+
+### **License**
+This project is licensed under:
+    MIT
+
+

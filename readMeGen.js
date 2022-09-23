@@ -1,10 +1,12 @@
 const genReadMe = function (title, description, installation, usage, license, contribution, test, github, email) {
     return `
+
 # **${title}**
 
-### **License**
-    ${license}
-------------------------------------------------------------
+${license}[![Licence](http://img.shields.io/badge/License-${license}-yellow.svg)](https://opensource.org/licenses/${license})
+
+---
+
 
 # **Table of Contents**
 
@@ -15,27 +17,45 @@ const genReadMe = function (title, description, installation, usage, license, co
 -[Test Instructions](#test-instructions)
 -[Question](#questions)
 
-------------------------------------------------------------
+
+---
+
 ## **Description of the Project**
-        ${description}
+${description}
+
+
 
 ## **Installation**
-    ${installation}
+${installation}
+
+
 
 ## **Usage Information**
-    ${usage}
+${usage}
+
 
 
 ## **Contribution Guidelines**
-    ${contribution}
+${contribution}
+
+
 
 ## **Test Instructions**
-        ${test}
+${test}
+
+
 
 ## **Questions**
-### You can reach me on:
-    Github:<https://www.github.com/${github}>
-    E-mail:<${email}>
+### If you have any questions about the project, please contact me at: mailto:${email}. 
+### You can also see my projects and works at: https://github.com/${github}
+
+
+
+### **License**
+This project is licensed under:
+    ${license}
+
+
 `
 }
 

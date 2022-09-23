@@ -25,12 +25,12 @@ The README generator will allow anyone to make a professional README.md
 
 
 ## **Installation**
-Installation is pretty easy, just clone the code, download needed packages and you're ready to go.
+Installation is pretty easy, just clone the code, download packages and you're ready to go.
 
 
 
 ## **Usage Information**
-Answer all the questions, choose a license and the generator will automatically generate the README.md
+User has to answer all the questions, choose a license and the generator will automatically generate a README.md
 
 
 

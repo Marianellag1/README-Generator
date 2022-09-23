@@ -1,8 +1,8 @@
 
 
-# **lkdflksfd**
+# **adfdfs**
 
-[![Licence](http://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+MPL_2.0[![Licence](http://img.shields.io/badge/License-MPL_2.0-yellow.svg)](https://opensource.org/licenses/MPL_2.0)
 
 ---
 
@@ -20,22 +20,22 @@
 ---
 
 ## **Description of the Project**
-dfadfjhsdjkfsh
+sdfdfsd
 
 
 
 ## **Installation**
-addfdjfdjk
+sdsdfs
 
 
 
 ## **Usage Information**
-asdjfhldjfds
+adsffd
 
 
 
 ## **Contribution Guidelines**
-Anyone can contribute to the project, as long as the it is agreed upon by the author, in order to merge any confirmed changes.
+a
 
 
 
@@ -45,13 +45,13 @@ User can clone copy of project and test project. If user believes that the proje
 
 
 ## **Questions**
-### If you have any questions about the project, please contact me at: sdfd. 
-### You can also see my projects and works at: https://github.com/asdf
+### If you have any questions about the project, please contact me at: mailto:adf. 
+### You can also see my projects and works at: https://github.com/afd
 
 
 
 ### **License**
 This project is licensed under:
-    MIT
+    MPL_2.0
 
 

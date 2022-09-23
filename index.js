@@ -32,7 +32,7 @@ inquirer
             type: 'list',
             name: 'license',
             message: 'What license did you use?',
-            choices: ['Unlicense', 'MIT','ODbl', 'MPL 2.0']
+            choices: ['Unlicense', 'MIT','ODbl', 'MPL_2.0']
             
         },
         {
